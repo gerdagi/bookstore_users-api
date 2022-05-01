@@ -1,0 +1,31 @@
+gin-gonic/gin api ını kullanıyoruz bütün http requestler
+için, first layer and we use as a controller, we use MVC patern
+
+go get -u github.com/gin-gonic/gin
+
+input layer is going to be controller
+and entry point of application is a controller
+and the whole idea behind the controller is to provide
+the functionality or the points to interact against
+the users API 
+
+main entry point is always controller
+
+http framework is used just in app/application file 
+
+json.Unmarshal, takes json input and converts to struct
+
+
+we should have only one error structure 
+
+in go, return parameters, if you have an error return parameter then that should be end of the parameter
+
+This is a function
+func validate(user *User){}
+
+But this is a method
+func (user *User) Validate(){}
+
+services folder, entire bussiness logic is in services folder 
+
+"dao" means data access object like a database
