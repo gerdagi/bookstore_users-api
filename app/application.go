@@ -1,6 +1,9 @@
 package app
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gerdagi/bookstore_users-api/logger"
+	"github.com/gin-gonic/gin"
+)
 
 var (
 	// router is only available in app package
@@ -9,5 +12,6 @@ var (
 
 func StartApplication() {
 	mapUrls()
-	router.Run(":8080")
+	logger.Info("about to start the application...")
+	router.Run(":8081")
 }
